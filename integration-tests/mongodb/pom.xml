@@ -30,6 +30,8 @@
     <description>Integration tests for Camel Quarkus MongoDB extension</description>
 
     <properties>
+        <jna.version>5.3.1</jna.version>
+
         <!-- mvnd, a.k.a. Maven Daemon: https://github.com/gnodet/mvnd -->
         <!-- The following rule tells mvnd to build the listed deployment modules before this module. -->
         <!-- This is important because mvnd builds modules in parallel by default. The deployment modules are not -->
@@ -38,6 +40,17 @@
         <!--     mvn process-resources -Pformat    from the root directory -->
         <mvnd.builder.rule>camel-quarkus-mongodb-deployment,camel-quarkus-support-policy-deployment</mvnd.builder.rule>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency><!-- Hopefully temporary workaround for https://github.com/quarkusio/quarkus/issues/9103 -->
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>${jna.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
