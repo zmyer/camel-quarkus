@@ -29,19 +29,19 @@ Level | Since | Description
 `activemq:destinationType:destinationName` | Native +
  Stable | 1.0.0-M5 | Send messages to (or consume from) Apache ActiveMQ. This component extends the Camel JMS component.
 
-| xref:extensions/ahc.adoc[AHC] (camel-quarkus-ahc) +
-`ahc:httpUri` | Native +
- Stable | 1.0.0-M3 | Call external HTTP services using Async Http Client.
-
-| link:https://camel.apache.org/components/latest/ahc-ws-component.html[AHC Websocket] (camel-quarkus-ahc-ws) +
-`ahc-ws:httpUri` | Native +
- Stable | 1.0.0-M3 | Exchange data with external Websocket servers using Async Http Client.
-
 | link:https://camel.apache.org/components/latest/amqp-component.html[AMQP] (camel-quarkus-amqp) +
 `amqp:destinationType:destinationName` | Native +
  Stable | 1.0.0-M6 | Messaging with AMQP protocol using Apache QPid Client.
 
-| link:https://camel.apache.org/components/latest/avro-component.html[Avro] (camel-quarkus-avro-rpc) +
+| xref:extensions/ahc.adoc[Async HTTP Client (AHC)] (camel-quarkus-ahc) +
+`ahc:httpUri` | Native +
+ Stable | 1.0.0-M3 | Call external HTTP services using Async Http Client.
+
+| link:https://camel.apache.org/components/latest/ahc-ws-component.html[Async HTTP Client (AHC) Websocket] (camel-quarkus-ahc-ws) +
+`ahc-ws:httpUri` | Native +
+ Stable | 1.0.0-M3 | Exchange data with external Websocket servers using Async Http Client.
+
+| link:https://camel.apache.org/components/latest/avro-component.html[Avro RPC] (camel-quarkus-avro-rpc) +
 `avro:transport:host:port/messageName` | JVM +
  Preview | 1.0.0-M6 | Produce or consume Apache Avro RPC services.
 
@@ -57,47 +57,47 @@ Level | Since | Description
 `aws2-ddbstream:tableName` | JVM +
  Preview | 1.0.0-M6 | Receive messages from AWS DynamoDB Stream service using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-ec2-component.html[AWS 2 EC2] (camel-quarkus-aws2-ec2) +
+| link:https://camel.apache.org/components/latest/aws2-ec2-component.html[AWS 2 Elastic Compute Cloud (EC2)] (camel-quarkus-aws2-ec2) +
 `aws2-ec2:label` | JVM +
  Preview | 1.0.0-M6 | Manage AWS EC2 instances using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-ecs-component.html[AWS 2 ECS] (camel-quarkus-aws2-ecs) +
+| link:https://camel.apache.org/components/latest/aws2-ecs-component.html[AWS 2 Elastic Container Service (ECS)] (camel-quarkus-aws2-ecs) +
 `aws2-ecs:label` | JVM +
  Preview | 1.0.0-M6 | Manage AWS ECS cluster instances using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-eks-component.html[AWS 2 EKS] (camel-quarkus-aws2-eks) +
+| link:https://camel.apache.org/components/latest/aws2-eks-component.html[AWS 2 Elastic Kubernetes Service (EKS)] (camel-quarkus-aws2-eks) +
 `aws2-eks:label` | JVM +
  Preview | 1.0.0-M6 | Manage AWS EKS cluster instances using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-iam-component.html[AWS 2 IAM] (camel-quarkus-aws2-iam) +
+| link:https://camel.apache.org/components/latest/aws2-iam-component.html[AWS 2 Identity and Access Management (IAM)] (camel-quarkus-aws2-iam) +
 `aws2-iam:label` | JVM +
  Preview | 1.0.0-M6 | Manage AWS IAM instances using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-kms-component.html[AWS 2 KMS] (camel-quarkus-aws2-kms) +
+| link:https://camel.apache.org/components/latest/aws2-kms-component.html[AWS 2 Key Management Service (KMS)] (camel-quarkus-aws2-kms) +
 `aws2-kms:label` | JVM +
  Preview | 1.0.0-M6 | Manage keys stored in AWS KMS instances using AWS SDK version 2.x.
+
+| link:https://camel.apache.org/components/latest/aws2-msk-component.html[AWS 2 Managed Streaming for Apache Kafka (MSK)] (camel-quarkus-aws2-msk) +
+`aws2-msk:label` | JVM +
+ Preview | 1.0.0-M6 | Manage AWS MSK instances using AWS SDK version 2.x.
 
 | link:https://camel.apache.org/components/latest/aws2-mq-component.html[AWS 2 MQ] (camel-quarkus-aws2-mq) +
 `aws2-mq:label` | JVM +
  Preview | 1.0.0-M6 | Manage AWS MQ instances using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-msk-component.html[AWS 2 MSK] (camel-quarkus-aws2-msk) +
-`aws2-msk:label` | JVM +
- Preview | 1.0.0-M6 | Manage AWS MSK instances using AWS SDK version 2.x.
-
 | link:https://camel.apache.org/components/latest/aws2-s3-component.html[AWS 2 S3 Storage Service] (camel-quarkus-aws2-s3) +
 `aws2-s3://bucketNameOrArn` | Native +
  Stable | 1.0.0-M7 | Store and retrie objects from AWS S3 Storage Service using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-ses-component.html[AWS 2 Simple Email Service] (camel-quarkus-aws2-ses) +
+| link:https://camel.apache.org/components/latest/aws2-ses-component.html[AWS 2 Simple Email Service (SES)] (camel-quarkus-aws2-ses) +
 `aws2-ses:from` | JVM +
  Preview | 1.0.0-M6 | Send e-mails through AWS SES service using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-sns-component.html[AWS 2 Simple Notification System] (camel-quarkus-aws2-sns) +
+| link:https://camel.apache.org/components/latest/aws2-sns-component.html[AWS 2 Simple Notification System (SNS)] (camel-quarkus-aws2-sns) +
 `aws2-sns:topicNameOrArn` | Native +
  Stable | 1.0.0-M6 | Send messages to an AWS Simple Notification Topic using AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws2-sqs-component.html[AWS 2 Simple Queue Service] (camel-quarkus-aws2-sqs) +
+| link:https://camel.apache.org/components/latest/aws2-sqs-component.html[AWS 2 Simple Queue Service (SQS)] (camel-quarkus-aws2-sqs) +
 `aws2-sqs:queueNameOrArn` | Native +
  Stable | 1.0.0-M6 | Sending and receive messages to/from AWS SQS service using AWS SDK version 2.x.
 
@@ -105,21 +105,25 @@ Level | Since | Description
 `aws2-translate:label` | JVM +
  Preview | 1.0.0-M6 | Translate texts using AWS Translate and AWS SDK version 2.x.
 
-| link:https://camel.apache.org/components/latest/aws-ec2-component.html[AWS EC2] (camel-quarkus-aws-ec2) +
+| link:https://camel.apache.org/components/latest/aws-ec2-component.html[AWS Elastic Compute Cloud (EC2)] (camel-quarkus-aws-ec2) +
 `aws-ec2:label` | Native +
  Stable | 1.0.0-M3 | Manage AWS EC2 instances.
 
-| link:https://camel.apache.org/components/latest/aws-ecs-component.html[AWS ECS] (camel-quarkus-aws-ecs) +
+| link:https://camel.apache.org/components/latest/aws-ecs-component.html[AWS Elastic Container Service (ECS)] (camel-quarkus-aws-ecs) +
 `aws-ecs:label` | Native +
  Stable | 1.0.0-M1 | Manage AWS ECS cluster instances.
 
-| link:https://camel.apache.org/components/latest/aws-eks-component.html[AWS EKS] (camel-quarkus-aws-eks) +
+| link:https://camel.apache.org/components/latest/aws-eks-component.html[AWS Elastic Kubernetes Service (EKS)] (camel-quarkus-aws-eks) +
 `aws-eks:label` | Native +
  Stable | 0.2.0 | Manage AWS EKS cluster instances.
 
-| link:https://camel.apache.org/components/latest/aws-iam-component.html[AWS IAM] (camel-quarkus-aws-iam) +
+| link:https://camel.apache.org/components/latest/aws-iam-component.html[AWS Identity and Access Management (IAM)] (camel-quarkus-aws-iam) +
 `aws-iam:label` | Native +
  Stable | 1.1.0 | Manage AWS IAM instances.
+
+| link:https://camel.apache.org/components/latest/aws-kms-component.html[AWS Key Management Service (KMS)] (camel-quarkus-aws-kms) +
+`aws-kms:label` | Native +
+ Stable | 1.0.0-M1 | Manage keys stored in AWS KMS instances.
 
 | link:https://camel.apache.org/components/latest/aws-kinesis-component.html[AWS Kinesis] (camel-quarkus-aws-kinesis) +
 `aws-kinesis:streamName` | Native +
@@ -129,10 +133,6 @@ Level | Since | Description
 `aws-kinesis-firehose:streamName` | Native +
  Stable | 1.0.0-M3 | Consume data from AWS Kinesis Firehose streams.
 
-| link:https://camel.apache.org/components/latest/aws-kms-component.html[AWS KMS] (camel-quarkus-aws-kms) +
-`aws-kms:label` | Native +
- Stable | 1.0.0-M1 | Manage keys stored in AWS KMS instances.
-
 | link:https://camel.apache.org/components/latest/aws-lambda-component.html[AWS Lambda] (camel-quarkus-aws-lambda) +
 `aws-lambda:function` | Native +
  Stable | 1.0.0-M3 | Manage and invoke AWS Lambda functions.
@@ -141,15 +141,15 @@ Level | Since | Description
 `aws-s3://bucketNameOrArn` | Native +
  Stable | 0.2.0 | Store and retrie objects from AWS S3 Storage Service.
 
-| link:https://camel.apache.org/components/latest/aws-sns-component.html[AWS Simple Notification System] (camel-quarkus-aws-sns) +
+| link:https://camel.apache.org/components/latest/aws-sns-component.html[AWS Simple Notification System (SNS)] (camel-quarkus-aws-sns) +
 `aws-sns:topicNameOrArn` | Native +
  Stable | 0.2.0 | Send messages to an AWS Simple Notification Topic.
 
-| link:https://camel.apache.org/components/latest/aws-sqs-component.html[AWS Simple Queue Service] (camel-quarkus-aws-sqs) +
+| link:https://camel.apache.org/components/latest/aws-sqs-component.html[AWS Simple Queue Service (SQS)] (camel-quarkus-aws-sqs) +
 `aws-sqs:queueNameOrArn` | Native +
  Stable | 0.2.0 | Sending and receive messages to/from AWS SQS service.
 
-| link:https://camel.apache.org/components/latest/aws-swf-component.html[AWS Simple Workflow] (camel-quarkus-aws-swf) +
+| link:https://camel.apache.org/components/latest/aws-swf-component.html[AWS Simple Workflow (SWF)] (camel-quarkus-aws-swf) +
 `aws-swf:type` | Native +
  Stable | 1.0.0-M6 | Manage workflows in the AWS Simple Workflow service.
 
@@ -666,16 +666,16 @@ Level | Since | Description
 | link:https://camel.apache.org/components/latest/jaxb-dataformat.html[JAXB] (camel-quarkus-jaxb) | Native +
  Stable | 1.0.0-M5 | Unmarshal XML payloads to POJOs and back using JAXB2 XML marshalling standard.
 
-| link:https://camel.apache.org/components/latest/json-gson-dataformat.html[JSon GSon] (camel-quarkus-gson) | Native +
+| link:https://camel.apache.org/components/latest/json-gson-dataformat.html[JSON Gson] (camel-quarkus-gson) | Native +
  Stable | 1.0.0-M4 | Marshal POJOs to JSON and back.
 
-| link:https://camel.apache.org/components/latest/json-jackson-dataformat.html[JSon Jackson] (camel-quarkus-jackson) | Native +
+| link:https://camel.apache.org/components/latest/json-jackson-dataformat.html[JSON Jackson] (camel-quarkus-jackson) | Native +
  Stable | 0.3.0 | Marshal POJOs to JSON and back.
 
-| link:https://camel.apache.org/components/latest/json-johnzon-dataformat.html[JSon Johnzon] (camel-quarkus-johnzon) | Native +
+| link:https://camel.apache.org/components/latest/json-johnzon-dataformat.html[JSON Johnzon] (camel-quarkus-johnzon) | Native +
  Stable | 1.0.0-M5 | Marshal POJOs to JSON and back.
 
-| link:https://camel.apache.org/components/latest/json-xstream-dataformat.html[JSon XStream] (camel-quarkus-xstream) | Native +
+| link:https://camel.apache.org/components/latest/json-xstream-dataformat.html[JSON XStream] (camel-quarkus-xstream) | Native +
  Stable | 1.0.0-M5 | Marshal POJOs to JSON and back.
 
 | link:https://camel.apache.org/components/latest/lzf-dataformat.html[LZF Deflate Compression] (camel-quarkus-lzf) | Native +
@@ -771,7 +771,7 @@ Number of miscellaneous extensions: 12 in 12 JAR artifacts (0 deprecated)
 | Extension | Target Level | Since | Description
 
 | (camel-quarkus-attachments) | Native +
- Stable | 0.3.0 | Java Attachments support for Camel Message
+ Stable | 0.3.0 | Support for attachments on Camel messages
 
 | (camel-quarkus-caffeine-lrucache) | Native +
  Stable | 1.0.0-M5 | An LRUCacheFactory implementation based on Caffeine
